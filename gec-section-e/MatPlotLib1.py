@@ -22,7 +22,7 @@ dfMatPlot.show()
 x = dfMatPlot.toPandas()["Product"].values.tolist()
 y = dfMatPlot.toPandas()["sum(Sales)"].values.tolist()
 plt.plot(x, y)
-#plt.show()
+plt.show()
 
 plt.bar(x,y)
 plt.show()
