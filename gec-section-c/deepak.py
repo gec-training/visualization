@@ -6,7 +6,7 @@ import pandas as pd
 spark = SparkSession.builder.appName("Superstore Analysis").getOrCreate()
 
 # Load CSV using Spark
-df_spark = spark.read.csv("../dataset/sample-superstore.csv", header=True, inferSchema=True)
+df_spark = spark.read.csv(r"../dataset/sample-superstore.csv", header=True, inferSchema=True)
 
 # Convert Spark DataFrame to Pandas
 df = df_spark.toPandas()
